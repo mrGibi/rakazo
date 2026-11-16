@@ -75,6 +75,11 @@ msgstr "{0, plural, one {साइन-इन की प्रतीक्षा 
 msgid "{0, plural, one {Waiting for sign-in — the link expires in about # minute.} other {Waiting for sign-in — the link expires in about # minutes.}}"
 msgstr "{0, plural, one {साइन-इन की प्रतीक्षा — लिंक लगभग # मिनट में समाप्त हो जाएगा।} other {साइन-इन की प्रतीक्षा — लिंक लगभग # मिनट में समाप्त हो जाएगा।}}"
 
+#. placeholder {0}: bot.name
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{0} (deleted)"
+msgstr ""
+
 #. placeholder {0}: file.name
 #: apps/web/src/pages/shell/use-composer-actions.ts
 msgid "{0} (max {ATTACHMENT_MAX_COUNT} attachments)"
@@ -328,6 +333,12 @@ msgstr "{count} घंटे पहले"
 msgid "{count}m ago"
 msgstr "{count} मिनट पहले"
 
+#. placeholder {0}: number(point.totalTokens)
+#. placeholder {1}: cost(point.costUsd)
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{day}: {0} tokens, {1}"
+msgstr ""
+
 #: apps/mobile/app/paywall.tsx
 msgid "{days} days free"
 msgstr "{days} दिन मुफ़्त"
@@ -377,6 +388,7 @@ msgid "{hours}h ago"
 msgstr "{hours} घंटे पहले"
 
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 msgid "{inviterName} invited you"
 msgstr "{inviterName} ने आपको आमंत्रित किया"
 
@@ -868,6 +880,14 @@ msgstr "1 अपठित"
 msgid "3 hours"
 msgstr "3 घंटे"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "30 days"
+msgstr ""
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "7 days"
+msgstr ""
+
 #: apps/web/src/components/ModelCredits.tsx
 msgid "A {times}× more powerful computer for your bot"
 msgstr "आपके बॉट के लिए {times}× ज़्यादा शक्तिशाली कंप्यूटर"
@@ -971,6 +991,10 @@ msgstr "खाते"
 #: apps/web/src/pages/shell/sidebar-roster.tsx
 msgid "Actions for {0}"
 msgstr "{0} के लिए कार्रवाइयां"
+
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Actions for {label}"
+msgstr ""
 
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/pages/shell/archived-chats.tsx
@@ -1235,6 +1259,11 @@ msgstr "पता पंक्ति 2"
 msgid "Adds"
 msgstr "क्या जोड़ा जाएगा"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Admin"
+msgstr ""
+
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/compatible-endpoint-form.tsx
 #: apps/mobile/components/routine-schedule-editor.tsx
@@ -1293,6 +1322,7 @@ msgstr "पूरे {price} मॉडल उपयोग पर जाते �
 #: apps/web/src/components/integrations/agent-access.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All bots"
 msgstr "सभी बॉट"
 
@@ -1300,6 +1330,10 @@ msgstr "सभी बॉट"
 #: apps/web/src/pages/Artifacts.tsx
 msgid "All files"
 msgstr "सभी फ़ाइलें"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "All models"
+msgstr ""
 
 #: apps/mobile/components/space-availability.tsx
 #: apps/web/src/components/integrations/space-availability.tsx
@@ -1311,6 +1345,7 @@ msgid "All statuses"
 msgstr "सभी स्थितियाँ"
 
 #: apps/web/src/pages/Artifacts.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All time"
 msgstr "अब तक"
 
@@ -1946,6 +1981,7 @@ msgstr "बॉट"
 #: apps/web/src/pages/shell/avatar-studio-popover.tsx
 #: apps/web/src/pages/shell/message-view.tsx
 #: apps/web/src/pages/SpaceSearch.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Bot"
 msgstr "बॉट"
 
@@ -2085,7 +2121,7 @@ msgstr "आपको कॉल कर रहा है…"
 msgid "Calling…"
 msgstr "कॉल हो रही है…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Calls"
 msgstr "कॉल"
 
@@ -2123,6 +2159,7 @@ msgstr "तस्वीरें नहीं पढ़ सकता"
 #: apps/mobile/app/(settings)/general.tsx
 #: apps/mobile/app/(settings)/memory-note.tsx
 #: apps/mobile/app/(settings)/model-connection.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/app/(settings)/profile.tsx
 #: apps/mobile/app/(settings)/skill.tsx
@@ -2185,6 +2222,11 @@ msgstr "तस्वीरें नहीं पढ़ सकता"
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "Cancel"
 msgstr "रद्द करें"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Cancel invitation"
+msgstr ""
 
 #: apps/web/src/pages/shell/agent-import.tsx
 msgid "Cancel new bot"
@@ -3078,6 +3120,7 @@ msgstr "कोड कॉपी करें"
 msgid "Copy diagram source"
 msgstr "डायग्राम स्रोत कॉपी करें"
 
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Copy invite link"
 msgstr "आमंत्रण लिंक कॉपी करें"
@@ -3098,7 +3141,7 @@ msgstr "प्रॉम्प्ट कॉपी करें"
 msgid "Copy rows"
 msgstr "पंक्तियाँ कॉपी करें"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Cost"
 msgstr "लागत"
 
@@ -3109,6 +3152,11 @@ msgstr "जोड़ा नहीं जा सका"
 #: apps/web/src/pages/McpServersOverlay.tsx
 msgid "Could not add MCP server"
 msgstr "MCP सर्वर जोड़ा नहीं जा सका"
+
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Could not add member"
+msgstr ""
 
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
@@ -3142,6 +3190,10 @@ msgstr "फ़ाइलें अटैच नहीं हो सकीं"
 msgid "Could not authorize this app"
 msgstr "इस ऐप को ऑथराइज़ नहीं किया जा सका"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+msgid "Could not cancel invitation"
+msgstr ""
+
 #: apps/mobile/app/space-members.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not cancel invites"
@@ -3160,6 +3212,10 @@ msgstr "भाषा नहीं बदली जा सकी"
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
 msgid "Could not change password"
 msgstr "पासवर्ड बदला नहीं जा सका"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+msgid "Could not change role"
+msgstr ""
 
 #: apps/mobile/components/space-availability.tsx
 #: apps/web/src/components/integrations/space-availability.tsx
@@ -3448,6 +3504,13 @@ msgstr "कनेक्टर इंस्टॉल नहीं हो सक�
 msgid "Could not install plugin"
 msgstr "प्लगइन इंस्टॉल नहीं हो सका"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Could not invite"
+msgstr ""
+
 #: apps/mobile/app/space-members.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not leave space"
@@ -3541,7 +3604,9 @@ msgstr "इंटीग्रेशन लोड नहीं हो सके"
 msgid "Could not load MCP servers"
 msgstr "MCP सर्वर लोड नहीं हो सके"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not load members"
 msgstr "सदस्य लोड नहीं हो सके"
@@ -3557,7 +3622,6 @@ msgstr "मेमोरी लोड नहीं हो सकी"
 #: apps/mobile/app/(settings)/models.tsx
 #: apps/mobile/app/bot-model.tsx
 #: apps/mobile/app/bot-settings.tsx
-#: apps/web/src/pages/model-settings/model-settings-panel.tsx
 #: apps/web/src/pages/model-settings/use-model-settings.ts
 msgid "Could not load model settings"
 msgstr "मॉडल सेटिंग्स लोड नहीं हो सकीं"
@@ -3628,6 +3692,10 @@ msgstr "यह फ़ाइल लोड नहीं हो सकी।"
 #: apps/mobile/app/page.tsx
 msgid "Could not load this page."
 msgstr "यह पेज लोड नहीं हो सका।"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Could not load usage."
+msgstr ""
 
 #: apps/mobile/app/(settings)/voice.tsx
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
@@ -3758,7 +3826,9 @@ msgstr "हटाया नहीं जा सका"
 msgid "Could not remove connector"
 msgstr "कनेक्टर हटाया नहीं जा सका"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not remove member"
 msgstr "सदस्य को हटाया नहीं जा सका"
@@ -3795,6 +3865,7 @@ msgstr "आइटम नहीं हटाया जा सका"
 msgid "Could not rename connection"
 msgstr "कनेक्शन का नाम नहीं बदला जा सका"
 
+#: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "Could not rename section"
 msgstr "अनुभाग का नाम नहीं बदला जा सका"
@@ -3982,6 +4053,10 @@ msgstr "फ़ाइल शेयर नहीं की जा सकी"
 #: apps/mobile/components/image-artifact-viewer.tsx
 msgid "Could not share image"
 msgstr "इमेज शेयर नहीं की जा सकी"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+msgid "Could not share invite link"
+msgstr ""
 
 #: apps/mobile/app/artifact.tsx
 msgid "Could not share this artifact"
@@ -4235,10 +4310,8 @@ msgstr "बॉट बनाएं"
 msgid "Create group"
 msgstr "समूह बनाएं"
 
-#: apps/mobile/app/(settings)/organization.tsx
 #: apps/mobile/app/new-organization.tsx
 #: apps/web/src/components/CreateOrganizationDialog.tsx
-#: apps/web/src/pages/OrganizationSettingsPanel.tsx
 msgid "Create organization"
 msgstr "संगठन बनाएँ"
 
@@ -4394,6 +4467,10 @@ msgstr "डार्क"
 #: apps/web/src/pages/plugins/use-catalog-browse.ts
 msgid "Data"
 msgstr "डेटा"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Date range"
+msgstr ""
 
 #: apps/mobile/lib/cron.ts
 #: apps/web/src/lib/billing.ts
@@ -4609,6 +4686,7 @@ msgid "Deleted"
 msgstr "डिलीट किया गया"
 
 #: apps/web/src/pages/shell/transcript-member-name.ts
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Deleted bot"
 msgstr "डिलीट किया गया बॉट"
 
@@ -4934,10 +5012,14 @@ msgstr "प्रोफ़ाइल संपादित करें"
 msgid "Edit routine"
 msgstr "रूटीन संपादित करें"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/bot-profile.tsx
 #: apps/mobile/app/sign-in.tsx
+#: apps/mobile/app/space-members.tsx
 #: apps/mobile/components/vault-item-editor.tsx
 #: apps/mobile/components/vault-item-sheet.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/components/vault/VaultItemDetail.tsx
 #: apps/web/src/components/vault/VaultItemEditor.tsx
 #: apps/web/src/pages/AdminAccessPage.tsx
@@ -5225,6 +5307,11 @@ msgstr "डेटा निर्यात करें"
 #: apps/web/src/components/teach/TeachComputerOverlay.tsx
 msgid "Export this week's list from the CRM and drop it in the shared folder"
 msgstr "CRM से इस सप्ताह की सूची एक्सपोर्ट करें और उसे साझा फ़ोल्डर में डालें"
+
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "External"
+msgstr ""
 
 #: apps/mobile/app/(settings)/messaging.tsx
 #: apps/mobile/app/(settings)/team-conversation.tsx
@@ -5884,7 +5971,7 @@ msgstr "API कुंजियाँ शामिल करें"
 msgid "Incoming call"
 msgstr "आने वाली कॉल"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Input"
 msgstr "इनपुट"
 
@@ -5971,7 +6058,14 @@ msgstr "अंतराल इकाई"
 msgid "Invalid code"
 msgstr "अमान्य कोड"
 
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Invitation sent"
+msgstr ""
+
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Invite"
 msgstr "आमंत्रित करें"
@@ -5981,19 +6075,36 @@ msgstr "आमंत्रित करें"
 msgid "Invite a friend"
 msgstr "किसी दोस्त को आमंत्रित करें"
 
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Invite by email"
+msgstr ""
+
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/components/SidebarFooter.tsx
 msgid "Invite friends"
 msgstr "दोस्तों को आमंत्रित करें"
 
 #: apps/web/src/components/InviteDialog.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Invite link"
 msgstr "आमंत्रण लिंक"
 
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Invite link copied"
 msgstr "आमंत्रण लिंक कॉपी किया गया"
+
+#: apps/mobile/app/(settings)/organization.tsx
+#: apps/web/src/pages/OrganizationSettingsPanel.tsx
+msgid "Invite people"
+msgstr ""
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Invited"
+msgstr ""
 
 #: apps/web/src/pages/MemorySettingsOverlay.tsx
 msgid "Isolated"
@@ -6033,8 +6144,13 @@ msgid "Its shared link stops working and its cards in chat show it as deleted. T
 msgstr "इसका शेयर किया गया लिंक काम करना बंद कर देगा और चैट में इसके कार्ड हटाए गए दिखेंगे। इसे पूर्ववत नहीं किया जा सकता।"
 
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 msgid "Join"
 msgstr "जुड़ें"
+
+#: apps/web/src/pages/JoinOrganization.tsx
+msgid "Join {organizationName}"
+msgstr ""
 
 #: apps/web/src/pages/Invite.tsx
 msgid "Join {spaceName}"
@@ -6277,6 +6393,10 @@ msgstr "प्रीव्यू लोड हो रहा है…"
 msgid "Loading tools…"
 msgstr "टूल लोड हो रहे हैं…"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Loading usage…"
+msgstr ""
+
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Loading voice providers…"
 msgstr "आवाज़ प्रोवाइडर्स लोड हो रहे हैं…"
@@ -6296,12 +6416,14 @@ msgstr "आवाज़ प्रोवाइडर्स लोड हो र�
 #: apps/web/src/components/bot-templates/bot-templates-dialog.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
 #: apps/web/src/components/integrations/skills-dialog.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/PageLoading.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/pages/AdminAccessPage.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/IntegrationSetup.tsx
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 #: apps/web/src/pages/PeerMessagesOverlay.tsx
 #: apps/web/src/pages/PluginSubmissionsPanel.tsx
 #: apps/web/src/pages/RoutineRunHistory.tsx
@@ -6373,6 +6495,16 @@ msgstr "बॉट्स ने बनाई"
 #: apps/web/src/pages/ModelSettingsOverlay.tsx
 msgid "Main model"
 msgstr "मुख्य मॉडल"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Make admin"
+msgstr ""
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Make member"
+msgstr ""
 
 #: apps/web/src/pages/BillingSettingsPanel.tsx
 #: apps/web/src/pages/SettingsOverlay.tsx
@@ -6501,10 +6633,15 @@ msgid "Member"
 msgstr "सदस्य"
 
 #: apps/mobile/app/_layout.tsx
+#: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/(settings)/account.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/mobile/app/(settings)/organization.tsx
 #: apps/mobile/app/space-members.tsx
 #: apps/mobile/components/inbox-render-item.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
+#: apps/web/src/pages/OrganizationSettingsPanel.tsx
 msgid "Members"
 msgstr "सदस्य"
 
@@ -6665,12 +6802,12 @@ msgstr "मोड"
 #: apps/mobile/app/(settings)/model-picker.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/compatible-endpoint-form.tsx
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/model-settings/compatible-model-fields.tsx
 #: apps/web/src/pages/onboarding/model-step.tsx
 #: apps/web/src/pages/routine-editor/model-settings.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 #: apps/web/src/pages/shell/chat-model-picker.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Model"
 msgstr "मॉडल"
 
@@ -6987,6 +7124,11 @@ msgstr "नई मोबाइल क्रियाएँ इन सेवा�
 msgid "New open-work item"
 msgstr "नया खुला-कार्य आइटम"
 
+#: apps/mobile/components/organization-menu.tsx
+#: apps/web/src/components/SidebarFooter.tsx
+msgid "New organization"
+msgstr ""
+
 #: apps/mobile/app/(settings)/change-password.tsx
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/Auth.tsx
@@ -7253,6 +7395,10 @@ msgstr "कोई टूल उपलब्ध नहीं।"
 msgid "No trigger"
 msgstr "कोई ट्रिगर नहीं"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "No usage for this selection."
+msgstr ""
+
 #. js-lingui-explicit-id
 #: packages/i18n/src/vault.ts
 msgid "No website and password columns found."
@@ -7296,6 +7442,14 @@ msgstr "कनेक्ट नहीं है"
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 msgid "Not imported"
 msgstr "इंपोर्ट नहीं हुआ"
+
+#: apps/mobile/app/space-members.tsx
+msgid "Not in {organization}. They'll only see this Space."
+msgstr ""
+
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Not in {organizationName}. They'll only see this Space."
+msgstr ""
 
 #: apps/web/src/pages/shell/import-status.ts
 msgid "Not in Rakazo's catalog"
@@ -7577,6 +7731,7 @@ msgstr "नेविगेशन खोलें"
 
 #: apps/web/src/components/pages/PublicPageShell.tsx
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 #: apps/web/src/pages/SharedPage.tsx
 msgid "Open Rakazo"
 msgstr "Rakazo खोलें"
@@ -7651,6 +7806,10 @@ msgstr "संगठन"
 msgid "Organization API key"
 msgstr "संगठन API कुंजी"
 
+#: apps/mobile/components/organization-menu.tsx
+msgid "Organization settings"
+msgstr ""
+
 #: apps/mobile/app/(settings)/general.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
@@ -7677,7 +7836,7 @@ msgstr "OTA {id}, {date}"
 msgid "Other model…"
 msgstr "अन्य मॉडल…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Output"
 msgstr "आउटपुट"
 
@@ -7686,9 +7845,11 @@ msgstr "आउटपुट"
 msgid "Own computer"
 msgstr "अपना कंप्यूटर"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/page-share.tsx
 #: apps/mobile/app/space-members.tsx
 #: apps/mobile/lib/identity-display.ts
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/pages/SharePopover.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/lib/identity-display.ts
@@ -8377,6 +8538,7 @@ msgstr "रिमोट MCP सर्वर"
 #: apps/mobile/app/(settings)/approvals.tsx
 #: apps/mobile/app/(settings)/computers.tsx
 #: apps/mobile/app/(settings)/integrations.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/app/(settings)/profile.tsx
 #: apps/mobile/app/(settings)/spending-limit.tsx
@@ -8387,6 +8549,7 @@ msgstr "रिमोट MCP सर्वर"
 #: apps/mobile/components/model-role-settings.tsx
 #: apps/mobile/components/vault-item-sheet.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/components/SpendingLimitSettings.tsx
 #: apps/web/src/components/TrustedLinkSitesSettings.tsx
@@ -8437,11 +8600,16 @@ msgstr "{memberName} को हटाएँ?"
 msgid "Remove {name}"
 msgstr "{name} हटाएँ"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/app/(settings)/vault.tsx
 #: apps/mobile/app/space-members.tsx
 msgid "Remove {name}?"
 msgstr "{name} हटाएँ?"
+
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Remove {removingName}?"
+msgstr ""
 
 #: apps/web/src/components/vault/VaultItemDetail.tsx
 msgid "Remove {secretName}? Bots will no longer be able to use it."
@@ -8508,10 +8676,6 @@ msgstr "स्किल हटाएँ"
 msgid "Remove webhook"
 msgstr "वेबहुक हटाएँ"
 
-#: apps/web/src/pages/ScratchpadSection.tsx
-msgid "Removed, but list refresh failed"
-msgstr "हटाया गया, लेकिन सूची रिफ़्रेश विफल रही"
-
 #: apps/mobile/app/(settings)/integrations.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
@@ -8530,6 +8694,7 @@ msgid "Rename"
 msgstr "नाम बदलें"
 
 #: apps/mobile/components/bot-organize-modal.tsx
+#: apps/mobile/components/inbox-render-item.tsx
 #: apps/mobile/components/inbox-swipe-row.ios.tsx
 #: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/BotContextMenu.tsx
@@ -8606,10 +8771,9 @@ msgstr "उत्तर दें"
 msgid "Reply cancelled"
 msgstr "जवाब रद्द किया गया"
 
-#. placeholder {0}: replyNameRef.current
 #: apps/web/src/pages/shell/composer.tsx
-msgid "Replying to {0}"
-msgstr "{0} को जवाब दे रहे हैं"
+msgid "Replying to {replyName}"
+msgstr ""
 
 #: apps/web/src/pages/routine-editor/trigger-cards.tsx
 msgid "Report unchanged checks"
@@ -8772,6 +8936,7 @@ msgstr "सूचनाएँ फिर शुरू करें"
 #: apps/web/src/pages/AdminAccessPage.tsx
 #: apps/web/src/pages/Auth.tsx
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 #: apps/web/src/pages/MemorySettingsOverlay.tsx
 #: apps/web/src/pages/ModelRoleSettings.tsx
 #: apps/web/src/pages/plugins/manage-view.tsx
@@ -8923,7 +9088,7 @@ msgstr "{workingRoutine} चल रहा है…"
 msgid "Running…"
 msgstr "चल रहा है…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Runs"
 msgstr "रन"
 
@@ -9026,10 +9191,6 @@ msgstr "सहेजा गया"
 #: apps/mobile/lib/artifact-open.ts
 msgid "Saved {name} locally"
 msgstr "{name} स्थानीय रूप से सहेजा गया"
-
-#: apps/web/src/pages/ScratchpadSection.tsx
-msgid "Saved, but list refresh failed"
-msgstr "सहेजा गया, लेकिन सूची रिफ़्रेश विफल रही"
 
 #. js-lingui-explicit-id
 #: packages/i18n/src/vault.ts
@@ -9432,6 +9593,11 @@ msgstr "{name} शेयर करें"
 msgid "Share data with {name}?"
 msgstr "{name} के साथ डेटा शेयर करें?"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/mobile/app/space-members.tsx
+msgid "Share invite link"
+msgstr ""
+
 #: apps/mobile/app/invite.tsx
 msgid "Share link"
 msgstr "लिंक शेयर करें"
@@ -9453,6 +9619,11 @@ msgstr "साझा"
 #: apps/web/src/pages/KnowledgeSection.tsx
 msgid "Shared memory"
 msgstr "साझा मेमोरी"
+
+#: apps/mobile/components/inbox-render-item.tsx
+#: apps/web/src/pages/shell/sidebar-roster.tsx
+msgid "Shared with guests"
+msgstr ""
 
 #: apps/mobile/components/vault-item-sheet.tsx
 #: apps/web/src/components/vault/VaultItemDetail.tsx
@@ -9576,6 +9747,10 @@ msgstr "Rakazo में साइन इन करें"
 #: apps/web/src/lib/user-error.ts
 msgid "Sign in to your account, then link this provider in settings"
 msgstr "अपने खाते में साइन इन करें, फिर सेटिंग्स में इस प्रोवाइडर को लिंक करें"
+
+#: apps/web/src/pages/Auth.tsx
+msgid "Sign in with demo account"
+msgstr ""
 
 #: apps/mobile/app/sign-in.tsx
 #: apps/web/src/components/PasskeySignIn.tsx
@@ -9836,6 +10011,11 @@ msgstr "स्पेस डिफ़ॉल्ट"
 #: apps/web/src/pages/SettingsOverlay.tsx
 msgid "Spaces"
 msgstr "कार्यस्थान"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Spaces only they use pass to you."
+msgstr ""
 
 #: apps/web/src/pages/shell/message-view.tsx
 msgid "Speak"
@@ -10548,6 +10728,10 @@ msgstr "यह फ़ाइल इम्पोर्ट करने के ल�
 msgid "This import was already used. Choose the files again."
 msgstr "यह इंपोर्ट पहले ही इस्तेमाल हो चुका है। फ़ाइलें फिर से चुनें।"
 
+#: apps/web/src/pages/JoinOrganization.tsx
+msgid "This invitation is no longer valid."
+msgstr ""
+
 #: apps/web/src/pages/Invite.tsx
 msgid "This invite link is no longer valid."
 msgstr "यह आमंत्रण लिंक अब मान्य नहीं है।"
@@ -10692,6 +10876,11 @@ msgstr "इस सर्वर का टूल परिणाम मॉडल 
 msgid "This Space keeps its own vault, so its bots can't use account items."
 msgstr "इस कार्यस्थान का अपना वॉल्ट है, इसलिए इसके बॉट खाते के आइटम इस्तेमाल नहीं कर सकते।"
 
+#. js-lingui-explicit-id
+#: packages/i18n/src/vault.ts
+msgid "This Space keeps its own vault. Its bots save and use items there, not here: open the Space's settings, then Vault."
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
 msgid "This subscription sign-in is not available in Rakazo yet. Use a deployment credential or choose another provider."
@@ -10763,6 +10952,7 @@ msgstr "प्रति:"
 #: apps/mobile/components/time-separator.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/chat-context.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Today"
 msgstr "आज"
 
@@ -10770,7 +10960,7 @@ msgstr "आज"
 msgid "Toggle sidebar"
 msgstr "साइडबार दिखाएं या छिपाएं"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Tokens"
 msgstr "टोकन"
 
@@ -10901,6 +11091,7 @@ msgstr "फिर से कोशिश करें"
 
 #: apps/mobile/app/(settings)/archived-bots.tsx
 #: apps/mobile/app/(settings)/bot-template.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/profile.tsx
 #: apps/mobile/app/artifact.tsx
 #: apps/mobile/app/artifacts.tsx
@@ -11151,6 +11342,10 @@ msgstr "URL"
 #: apps/web/src/pages/settings-nav.ts
 msgid "Usage"
 msgstr "उपयोग"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Usage over time"
+msgstr ""
 
 #. Switches the saved timezone to this device's, e.g. 'Use Pacific/Auckland'
 #. placeholder {0}: deviceTimezone.replaceAll("_", " ")

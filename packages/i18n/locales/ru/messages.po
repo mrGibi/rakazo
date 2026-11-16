@@ -75,6 +75,11 @@ msgstr "{0, plural, one {Ожидание входа — код истекает
 msgid "{0, plural, one {Waiting for sign-in — the link expires in about # minute.} other {Waiting for sign-in — the link expires in about # minutes.}}"
 msgstr "{0, plural, one {Ожидание входа — ссылка истекает примерно через # минуту.} few {Ожидание входа — ссылка истекает примерно через # минуты.} many {Ожидание входа — ссылка истекает примерно через # минут.} other {Ожидание входа — ссылка истекает примерно через # минуты.}}"
 
+#. placeholder {0}: bot.name
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{0} (deleted)"
+msgstr ""
+
 #. placeholder {0}: file.name
 #: apps/web/src/pages/shell/use-composer-actions.ts
 msgid "{0} (max {ATTACHMENT_MAX_COUNT} attachments)"
@@ -328,6 +333,12 @@ msgstr "{count} ч назад"
 msgid "{count}m ago"
 msgstr "{count} мин назад"
 
+#. placeholder {0}: number(point.totalTokens)
+#. placeholder {1}: cost(point.costUsd)
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "{day}: {0} tokens, {1}"
+msgstr ""
+
 #: apps/mobile/app/paywall.tsx
 msgid "{days} days free"
 msgstr "{days} дн. бесплатно"
@@ -377,6 +388,7 @@ msgid "{hours}h ago"
 msgstr "{hours} ч назад"
 
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 msgid "{inviterName} invited you"
 msgstr "{inviterName} приглашает вас"
 
@@ -868,6 +880,14 @@ msgstr "1 непрочитанный"
 msgid "3 hours"
 msgstr "3 часа"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "30 days"
+msgstr ""
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "7 days"
+msgstr ""
+
 #: apps/web/src/components/ModelCredits.tsx
 msgid "A {times}× more powerful computer for your bot"
 msgstr "Компьютер для бота в {times}× мощнее"
@@ -971,6 +991,10 @@ msgstr "Аккаунты"
 #: apps/web/src/pages/shell/sidebar-roster.tsx
 msgid "Actions for {0}"
 msgstr "Действия для {0}"
+
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Actions for {label}"
+msgstr ""
 
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/pages/shell/archived-chats.tsx
@@ -1235,6 +1259,11 @@ msgstr "Адрес, строка 2"
 msgid "Adds"
 msgstr "Будет добавлено"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Admin"
+msgstr ""
+
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/compatible-endpoint-form.tsx
 #: apps/mobile/components/routine-schedule-editor.tsx
@@ -1293,6 +1322,7 @@ msgstr "Все {price} идут на использование моделей."
 #: apps/web/src/components/integrations/agent-access.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All bots"
 msgstr "Все боты"
 
@@ -1300,6 +1330,10 @@ msgstr "Все боты"
 #: apps/web/src/pages/Artifacts.tsx
 msgid "All files"
 msgstr "Все файлы"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "All models"
+msgstr ""
 
 #: apps/mobile/components/space-availability.tsx
 #: apps/web/src/components/integrations/space-availability.tsx
@@ -1311,6 +1345,7 @@ msgid "All statuses"
 msgstr "Все статусы"
 
 #: apps/web/src/pages/Artifacts.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "All time"
 msgstr "За всё время"
 
@@ -1946,6 +1981,7 @@ msgstr "бот"
 #: apps/web/src/pages/shell/avatar-studio-popover.tsx
 #: apps/web/src/pages/shell/message-view.tsx
 #: apps/web/src/pages/SpaceSearch.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Bot"
 msgstr "Бот"
 
@@ -2085,7 +2121,7 @@ msgstr "Звонит вам…"
 msgid "Calling…"
 msgstr "Вызов…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Calls"
 msgstr "Вызовы"
 
@@ -2123,6 +2159,7 @@ msgstr "Не может читать изображения"
 #: apps/mobile/app/(settings)/general.tsx
 #: apps/mobile/app/(settings)/memory-note.tsx
 #: apps/mobile/app/(settings)/model-connection.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/app/(settings)/profile.tsx
 #: apps/mobile/app/(settings)/skill.tsx
@@ -2185,6 +2222,11 @@ msgstr "Не может читать изображения"
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "Cancel"
 msgstr "Отмена"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Cancel invitation"
+msgstr ""
 
 #: apps/web/src/pages/shell/agent-import.tsx
 msgid "Cancel new bot"
@@ -3078,6 +3120,7 @@ msgstr "Копировать код"
 msgid "Copy diagram source"
 msgstr "Копировать источник диаграммы"
 
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Copy invite link"
 msgstr "Скопировать ссылку-приглашение"
@@ -3098,7 +3141,7 @@ msgstr "Скопировать промпт"
 msgid "Copy rows"
 msgstr "Копировать строки"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Cost"
 msgstr "Стоимость"
 
@@ -3109,6 +3152,11 @@ msgstr "Не удалось добавить"
 #: apps/web/src/pages/McpServersOverlay.tsx
 msgid "Could not add MCP server"
 msgstr "Не удалось добавить сервер MCP."
+
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Could not add member"
+msgstr ""
 
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
@@ -3142,6 +3190,10 @@ msgstr "Не удалось прикрепить файлы"
 msgid "Could not authorize this app"
 msgstr "Не удалось авторизовать это приложение"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+msgid "Could not cancel invitation"
+msgstr ""
+
 #: apps/mobile/app/space-members.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not cancel invites"
@@ -3160,6 +3212,10 @@ msgstr "Не удалось изменить язык"
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
 msgid "Could not change password"
 msgstr "Не удалось изменить пароль"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+msgid "Could not change role"
+msgstr ""
 
 #: apps/mobile/components/space-availability.tsx
 #: apps/web/src/components/integrations/space-availability.tsx
@@ -3448,6 +3504,13 @@ msgstr "Не удалось установить коннектор"
 msgid "Could not install plugin"
 msgstr "Не удалось установить плагин"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Could not invite"
+msgstr ""
+
 #: apps/mobile/app/space-members.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not leave space"
@@ -3541,7 +3604,9 @@ msgstr "Не удалось загрузить интеграции"
 msgid "Could not load MCP servers"
 msgstr "Не удалось загрузить серверы MCP."
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not load members"
 msgstr "Не удалось загрузить участников"
@@ -3557,7 +3622,6 @@ msgstr "Не удалось загрузить память"
 #: apps/mobile/app/(settings)/models.tsx
 #: apps/mobile/app/bot-model.tsx
 #: apps/mobile/app/bot-settings.tsx
-#: apps/web/src/pages/model-settings/model-settings-panel.tsx
 #: apps/web/src/pages/model-settings/use-model-settings.ts
 msgid "Could not load model settings"
 msgstr "Не удалось загрузить настройки модели."
@@ -3628,6 +3692,10 @@ msgstr "Не удалось загрузить этот файл."
 #: apps/mobile/app/page.tsx
 msgid "Could not load this page."
 msgstr "Не удалось загрузить эту страницу."
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Could not load usage."
+msgstr ""
 
 #: apps/mobile/app/(settings)/voice.tsx
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
@@ -3758,7 +3826,9 @@ msgstr "Не удалось удалить"
 msgid "Could not remove connector"
 msgstr "Не удалось удалить коннектор"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Could not remove member"
 msgstr "Не удалось удалить участника"
@@ -3795,6 +3865,7 @@ msgstr "Не удалось удалить запись"
 msgid "Could not rename connection"
 msgstr "Не удалось переименовать соединение"
 
+#: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "Could not rename section"
 msgstr "Не удалось переименовать раздел"
@@ -3982,6 +4053,10 @@ msgstr "Не удалось поделиться файлом"
 #: apps/mobile/components/image-artifact-viewer.tsx
 msgid "Could not share image"
 msgstr "Не удалось поделиться изображением"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+msgid "Could not share invite link"
+msgstr ""
 
 #: apps/mobile/app/artifact.tsx
 msgid "Could not share this artifact"
@@ -4235,10 +4310,8 @@ msgstr "Создать бота"
 msgid "Create group"
 msgstr "Создать группу"
 
-#: apps/mobile/app/(settings)/organization.tsx
 #: apps/mobile/app/new-organization.tsx
 #: apps/web/src/components/CreateOrganizationDialog.tsx
-#: apps/web/src/pages/OrganizationSettingsPanel.tsx
 msgid "Create organization"
 msgstr "Создать организацию"
 
@@ -4394,6 +4467,10 @@ msgstr "Тёмная"
 #: apps/web/src/pages/plugins/use-catalog-browse.ts
 msgid "Data"
 msgstr "Данные"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Date range"
+msgstr ""
 
 #: apps/mobile/lib/cron.ts
 #: apps/web/src/lib/billing.ts
@@ -4609,6 +4686,7 @@ msgid "Deleted"
 msgstr "Удалена"
 
 #: apps/web/src/pages/shell/transcript-member-name.ts
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Deleted bot"
 msgstr "Удалённый бот"
 
@@ -4934,10 +5012,14 @@ msgstr "Редактировать профиль"
 msgid "Edit routine"
 msgstr "Изменить задачу"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/bot-profile.tsx
 #: apps/mobile/app/sign-in.tsx
+#: apps/mobile/app/space-members.tsx
 #: apps/mobile/components/vault-item-editor.tsx
 #: apps/mobile/components/vault-item-sheet.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/components/vault/VaultItemDetail.tsx
 #: apps/web/src/components/vault/VaultItemEditor.tsx
 #: apps/web/src/pages/AdminAccessPage.tsx
@@ -5225,6 +5307,11 @@ msgstr "Экспорт данных"
 #: apps/web/src/components/teach/TeachComputerOverlay.tsx
 msgid "Export this week's list from the CRM and drop it in the shared folder"
 msgstr "Экспортируйте список этой недели из CRM и поместите его в общую папку."
+
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "External"
+msgstr ""
 
 #: apps/mobile/app/(settings)/messaging.tsx
 #: apps/mobile/app/(settings)/team-conversation.tsx
@@ -5884,7 +5971,7 @@ msgstr "Включить ключи API"
 msgid "Incoming call"
 msgstr "Входящий звонок"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Input"
 msgstr "Ввод"
 
@@ -5971,7 +6058,14 @@ msgstr "Единица интервала"
 msgid "Invalid code"
 msgstr "Неверный код"
 
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Invitation sent"
+msgstr ""
+
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Invite"
 msgstr "Пригласить"
@@ -5981,19 +6075,36 @@ msgstr "Пригласить"
 msgid "Invite a friend"
 msgstr "Пригласить друга"
 
+#: apps/mobile/app/space-members.tsx
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Invite by email"
+msgstr ""
+
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/components/SidebarFooter.tsx
 msgid "Invite friends"
 msgstr "Пригласить друзей"
 
 #: apps/web/src/components/InviteDialog.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Invite link"
 msgstr "Ссылка-приглашение"
 
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 msgid "Invite link copied"
 msgstr "Ссылка-приглашение скопирована"
+
+#: apps/mobile/app/(settings)/organization.tsx
+#: apps/web/src/pages/OrganizationSettingsPanel.tsx
+msgid "Invite people"
+msgstr ""
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Invited"
+msgstr ""
 
 #: apps/web/src/pages/MemorySettingsOverlay.tsx
 msgid "Isolated"
@@ -6033,8 +6144,13 @@ msgid "Its shared link stops working and its cards in chat show it as deleted. T
 msgstr "Общая ссылка перестанет работать, а карточки в чате будут показаны как удалённые. Это нельзя отменить."
 
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 msgid "Join"
 msgstr "Присоединиться"
+
+#: apps/web/src/pages/JoinOrganization.tsx
+msgid "Join {organizationName}"
+msgstr ""
 
 #: apps/web/src/pages/Invite.tsx
 msgid "Join {spaceName}"
@@ -6277,6 +6393,10 @@ msgstr "Загрузка предварительного просмотра…"
 msgid "Loading tools…"
 msgstr "Загрузка инструментов…"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Loading usage…"
+msgstr ""
+
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Loading voice providers…"
 msgstr "Загрузка поставщиков голосовой связи…"
@@ -6296,12 +6416,14 @@ msgstr "Загрузка поставщиков голосовой связи…
 #: apps/web/src/components/bot-templates/bot-templates-dialog.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
 #: apps/web/src/components/integrations/skills-dialog.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/PageLoading.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/pages/AdminAccessPage.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/IntegrationSetup.tsx
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 #: apps/web/src/pages/PeerMessagesOverlay.tsx
 #: apps/web/src/pages/PluginSubmissionsPanel.tsx
 #: apps/web/src/pages/RoutineRunHistory.tsx
@@ -6373,6 +6495,16 @@ msgstr "Созданные ботами"
 #: apps/web/src/pages/ModelSettingsOverlay.tsx
 msgid "Main model"
 msgstr "Основная модель"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Make admin"
+msgstr ""
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Make member"
+msgstr ""
 
 #: apps/web/src/pages/BillingSettingsPanel.tsx
 #: apps/web/src/pages/SettingsOverlay.tsx
@@ -6501,10 +6633,15 @@ msgid "Member"
 msgstr "Участник"
 
 #: apps/mobile/app/_layout.tsx
+#: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/(settings)/account.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/mobile/app/(settings)/organization.tsx
 #: apps/mobile/app/space-members.tsx
 #: apps/mobile/components/inbox-render-item.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
+#: apps/web/src/pages/OrganizationSettingsPanel.tsx
 msgid "Members"
 msgstr "Участники"
 
@@ -6665,12 +6802,12 @@ msgstr "Режим"
 #: apps/mobile/app/(settings)/model-picker.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/compatible-endpoint-form.tsx
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/model-settings/compatible-model-fields.tsx
 #: apps/web/src/pages/onboarding/model-step.tsx
 #: apps/web/src/pages/routine-editor/model-settings.tsx
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 #: apps/web/src/pages/shell/chat-model-picker.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Model"
 msgstr "Модель"
 
@@ -6987,6 +7124,11 @@ msgstr "Новые действия на мобильном устройстве
 msgid "New open-work item"
 msgstr "Новая задача"
 
+#: apps/mobile/components/organization-menu.tsx
+#: apps/web/src/components/SidebarFooter.tsx
+msgid "New organization"
+msgstr ""
+
 #: apps/mobile/app/(settings)/change-password.tsx
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/Auth.tsx
@@ -7253,6 +7395,10 @@ msgstr "Нет доступных инструментов."
 msgid "No trigger"
 msgstr "Нет триггера"
 
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "No usage for this selection."
+msgstr ""
+
 #. js-lingui-explicit-id
 #: packages/i18n/src/vault.ts
 msgid "No website and password columns found."
@@ -7296,6 +7442,14 @@ msgstr "Не подключено"
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 msgid "Not imported"
 msgstr "Не импортировано"
+
+#: apps/mobile/app/space-members.tsx
+msgid "Not in {organization}. They'll only see this Space."
+msgstr ""
+
+#: apps/web/src/components/SpaceMembersSettings.tsx
+msgid "Not in {organizationName}. They'll only see this Space."
+msgstr ""
 
 #: apps/web/src/pages/shell/import-status.ts
 msgid "Not in Rakazo's catalog"
@@ -7577,6 +7731,7 @@ msgstr "Открыть навигацию"
 
 #: apps/web/src/components/pages/PublicPageShell.tsx
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 #: apps/web/src/pages/SharedPage.tsx
 msgid "Open Rakazo"
 msgstr "Открыть Rakazo"
@@ -7651,6 +7806,10 @@ msgstr "Организация"
 msgid "Organization API key"
 msgstr "Ключ API организации"
 
+#: apps/mobile/components/organization-menu.tsx
+msgid "Organization settings"
+msgstr ""
+
 #: apps/mobile/app/(settings)/general.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
@@ -7677,7 +7836,7 @@ msgstr "OTA {id}, {date}"
 msgid "Other model…"
 msgstr "Другая модель…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Output"
 msgstr "Вывод"
 
@@ -7686,9 +7845,11 @@ msgstr "Вывод"
 msgid "Own computer"
 msgstr "Свой компьютер"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/page-share.tsx
 #: apps/mobile/app/space-members.tsx
 #: apps/mobile/lib/identity-display.ts
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/pages/SharePopover.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/lib/identity-display.ts
@@ -8377,6 +8538,7 @@ msgstr "Удалённый MCP-сервер"
 #: apps/mobile/app/(settings)/approvals.tsx
 #: apps/mobile/app/(settings)/computers.tsx
 #: apps/mobile/app/(settings)/integrations.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/app/(settings)/profile.tsx
 #: apps/mobile/app/(settings)/spending-limit.tsx
@@ -8387,6 +8549,7 @@ msgstr "Удалённый MCP-сервер"
 #: apps/mobile/components/model-role-settings.tsx
 #: apps/mobile/components/vault-item-sheet.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
 #: apps/web/src/components/SpaceMembersSettings.tsx
 #: apps/web/src/components/SpendingLimitSettings.tsx
 #: apps/web/src/components/TrustedLinkSitesSettings.tsx
@@ -8437,11 +8600,16 @@ msgstr "Удалить {memberName}?"
 msgid "Remove {name}"
 msgstr "Удалить {name}"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/app/(settings)/vault.tsx
 #: apps/mobile/app/space-members.tsx
 msgid "Remove {name}?"
 msgstr "Удалить {name}?"
+
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Remove {removingName}?"
+msgstr ""
 
 #: apps/web/src/components/vault/VaultItemDetail.tsx
 msgid "Remove {secretName}? Bots will no longer be able to use it."
@@ -8508,10 +8676,6 @@ msgstr "Удалить навыки"
 msgid "Remove webhook"
 msgstr "Удалить вебхук"
 
-#: apps/web/src/pages/ScratchpadSection.tsx
-msgid "Removed, but list refresh failed"
-msgstr "Удалено, но обновить список не удалось."
-
 #: apps/mobile/app/(settings)/integrations.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
@@ -8530,6 +8694,7 @@ msgid "Rename"
 msgstr "Переименовать"
 
 #: apps/mobile/components/bot-organize-modal.tsx
+#: apps/mobile/components/inbox-render-item.tsx
 #: apps/mobile/components/inbox-swipe-row.ios.tsx
 #: apps/mobile/lib/use-inbox-chat-actions.ts
 #: apps/web/src/pages/BotContextMenu.tsx
@@ -8606,10 +8771,9 @@ msgstr "Ответить"
 msgid "Reply cancelled"
 msgstr "Ответ отменён"
 
-#. placeholder {0}: replyNameRef.current
 #: apps/web/src/pages/shell/composer.tsx
-msgid "Replying to {0}"
-msgstr "Ответ: {0}"
+msgid "Replying to {replyName}"
+msgstr ""
 
 #: apps/web/src/pages/routine-editor/trigger-cards.tsx
 msgid "Report unchanged checks"
@@ -8772,6 +8936,7 @@ msgstr "Возобновить уведомления"
 #: apps/web/src/pages/AdminAccessPage.tsx
 #: apps/web/src/pages/Auth.tsx
 #: apps/web/src/pages/Invite.tsx
+#: apps/web/src/pages/JoinOrganization.tsx
 #: apps/web/src/pages/MemorySettingsOverlay.tsx
 #: apps/web/src/pages/ModelRoleSettings.tsx
 #: apps/web/src/pages/plugins/manage-view.tsx
@@ -8923,7 +9088,7 @@ msgstr "Выполняется {workingRoutine}…"
 msgid "Running…"
 msgstr "Выполняется…"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Runs"
 msgstr "Запуски"
 
@@ -9026,10 +9191,6 @@ msgstr "Сохранено"
 #: apps/mobile/lib/artifact-open.ts
 msgid "Saved {name} locally"
 msgstr "{name} сохранен локально."
-
-#: apps/web/src/pages/ScratchpadSection.tsx
-msgid "Saved, but list refresh failed"
-msgstr "Сохранено, но обновить список не удалось."
 
 #. js-lingui-explicit-id
 #: packages/i18n/src/vault.ts
@@ -9432,6 +9593,11 @@ msgstr "Поделиться {name}"
 msgid "Share data with {name}?"
 msgstr "Поделиться данными с {name}?"
 
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/mobile/app/space-members.tsx
+msgid "Share invite link"
+msgstr ""
+
 #: apps/mobile/app/invite.tsx
 msgid "Share link"
 msgstr "Поделиться ссылкой"
@@ -9453,6 +9619,11 @@ msgstr "Общий"
 #: apps/web/src/pages/KnowledgeSection.tsx
 msgid "Shared memory"
 msgstr "Общая память"
+
+#: apps/mobile/components/inbox-render-item.tsx
+#: apps/web/src/pages/shell/sidebar-roster.tsx
+msgid "Shared with guests"
+msgstr ""
 
 #: apps/mobile/components/vault-item-sheet.tsx
 #: apps/web/src/components/vault/VaultItemDetail.tsx
@@ -9576,6 +9747,10 @@ msgstr "Войти в Rakazo"
 #: apps/web/src/lib/user-error.ts
 msgid "Sign in to your account, then link this provider in settings"
 msgstr "Войдите в свой аккаунт, затем привяжите этого провайдера в настройках"
+
+#: apps/web/src/pages/Auth.tsx
+msgid "Sign in with demo account"
+msgstr ""
 
 #: apps/mobile/app/sign-in.tsx
 #: apps/web/src/components/PasskeySignIn.tsx
@@ -9836,6 +10011,11 @@ msgstr "Пространство по умолчанию"
 #: apps/web/src/pages/SettingsOverlay.tsx
 msgid "Spaces"
 msgstr "Пространства"
+
+#: apps/mobile/app/(settings)/organization-members.tsx
+#: apps/web/src/components/OrganizationMembersSettings.tsx
+msgid "Spaces only they use pass to you."
+msgstr ""
 
 #: apps/web/src/pages/shell/message-view.tsx
 msgid "Speak"
@@ -10548,6 +10728,10 @@ msgstr "Этот файл слишком большой для импорта."
 msgid "This import was already used. Choose the files again."
 msgstr "Этот импорт уже использован. Выберите файлы снова."
 
+#: apps/web/src/pages/JoinOrganization.tsx
+msgid "This invitation is no longer valid."
+msgstr ""
+
 #: apps/web/src/pages/Invite.tsx
 msgid "This invite link is no longer valid."
 msgstr "Эта ссылка-приглашение больше недействительна."
@@ -10692,6 +10876,11 @@ msgstr "Результат инструмента этого сервера не
 msgid "This Space keeps its own vault, so its bots can't use account items."
 msgstr "У этого пространства своё хранилище, поэтому его боты не могут использовать элементы аккаунта."
 
+#. js-lingui-explicit-id
+#: packages/i18n/src/vault.ts
+msgid "This Space keeps its own vault. Its bots save and use items there, not here: open the Space's settings, then Vault."
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
 msgid "This subscription sign-in is not available in Rakazo yet. Use a deployment credential or choose another provider."
@@ -10763,6 +10952,7 @@ msgstr "К:"
 #: apps/mobile/components/time-separator.tsx
 #: apps/web/src/pages/Artifacts.tsx
 #: apps/web/src/pages/shell/chat-context.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Today"
 msgstr "Сегодня"
 
@@ -10770,7 +10960,7 @@ msgstr "Сегодня"
 msgid "Toggle sidebar"
 msgstr "Показать или скрыть боковую панель"
 
-#: apps/web/src/pages/AccountSettingsOverlay.tsx
+#: apps/web/src/pages/UsageSettingsPanel.tsx
 msgid "Tokens"
 msgstr "Токены"
 
@@ -10901,6 +11091,7 @@ msgstr "Попробовать ещё раз"
 
 #: apps/mobile/app/(settings)/archived-bots.tsx
 #: apps/mobile/app/(settings)/bot-template.tsx
+#: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/(settings)/profile.tsx
 #: apps/mobile/app/artifact.tsx
 #: apps/mobile/app/artifacts.tsx
@@ -11151,6 +11342,10 @@ msgstr "URL"
 #: apps/web/src/pages/settings-nav.ts
 msgid "Usage"
 msgstr "Использование"
+
+#: apps/web/src/pages/UsageSettingsPanel.tsx
+msgid "Usage over time"
+msgstr ""
 
 #. Switches the saved timezone to this device's, e.g. 'Use Pacific/Auckland'
 #. placeholder {0}: deviceTimezone.replaceAll("_", " ")
